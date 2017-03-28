@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Naomi Miura</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- <h1 class="title"><p>Naomi</p><p>Miura</p>
+  <div class=sns>
+    <img class="fb" src="img/tw.png">
+    <img class="tw" src="img/fb.png">
+  </div>
+<!--  -->
+<div class="clearfix">  
+<h1 class="title"><p>Naomi</p><p>Miura</p></h1> 
+<div class=sns> 
+<a href="https://www.facebook.com/"  TARGET="_blank" ><img class="fb" src="img/tw.png"> 
+<img class="tw" src="img/fb.png"> 
+</div> 
+</div>
+
+</h1>
+
+
+
+<header id="sticky_item" class="header clearfix">
+<ul class="menu" style="list-style:none;">
+		<li class="header-list"><a href="#l1">About</a></li>
+		<li class="header-list"><a href="#l2">Works</a></li>
+		<li class="header-list"><a href="#l3">Blog</a></li>
+		<li class="header-list"><a href="#l4">Contact</a></li>
+	</ul>
+</header>
+
+<div class="top" id="l0">
+  <p>Free Editor / Writter</p>
+</div>
+
+<div class="about " id="l1">
+	<h1>About</h1>
+  <br>
+  <br>
+	<p1>三浦ナオミ</p>
+	<br>
+  <br>
+  <p>テキスト入りますテキスト入りますテキスト入ります</p>
+  <p>テキスト入りますテキスト入りますテキスト入ります</p>
+  <p>テキスト入りますテキスト入りますテキスト入ります</p>
+  <br>
+  <br>
+  <p><a href=>Twitter</a> / <a href="https://www.facebook.com/">Facebook</a></p>
+
+</div>
+
+<div class="works" id="l2">
+	<h1>Works</h1>
+
+</div>
+
+<div class="blog" id="l3">
+	<h1>Blog</h1>
+
+</div>
+
+<div class="contact" id="l4">
+	<h1>Contact</h1>
+  <form action="/my-handling-form-page" method="post">
+    <div class="name1">
+        <label for="name">Name</label>
+        <p><input type="text" id="name" name="user_name" /></p>
+    </div>
+    <div class="mail1">
+        <label for="mail">E-mail</label>
+        <p><input type="email" id="mail" name="user_email" /></p>
+    </div>
+    <div class="msg1">
+        <label for="msg">Message</label>
+        <p><textarea id="msg" name="user_message"></textarea></p>
+    </div>
+    
+    <div class="button">
+        <button type="submit">Send your message</button>
+    </div>
+</form>
+
+</div>
+
+<div class="clearfix"> 
+<footer>
+	<p>Copyright©Naomi Miura All Rights Reserved.</p>
+	<img class="img" src="img/flower.png">
+</footer>
+</div>
+
+<!-- jQuery.jsの読み込み -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="script.js"></script>
+
+<!-- スムーズスクロール部分の記述 -->
+<script>
+$(function(){
+   // #で始まるアンカーをクリックした場合に処理
+   $('a[href^=#]').click(function() {
+      // スクロールの速度
+      var speed = 1000; // ミリ秒
+      // アンカーの値取得
+      var href= $(this).attr("href");
+      // 移動先を取得
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      // 移動先を数値で取得
+      var position = target.offset().top;
+      // スムーススクロール
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+   });
+});
+</script>
+
+<script type="text/javascript">
+  (function() {
+    $("#sticky_item").stick_in_parent();
+  })();
+</script>
+</body>
+
+
+</html>
