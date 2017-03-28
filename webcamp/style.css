@@ -36,7 +36,6 @@ body{
 }
 
 .sns{
-/*  text-align: right;*/
   width:300px; 
   height: auto; 
   margin-left:auto; 
@@ -93,7 +92,6 @@ a.header-list {
 .top p{
     padding: 150px 150px;
     font-size: 20px;
-    font-family: "Avenir Next";
 }
 
 
@@ -102,7 +100,12 @@ a.header-list {
   padding-left: 50px;
   padding-top: 75px;
   background-color: #FFF6CE;
-  margin: 00px 50px;
+  margin: 0px 50px;
+}
+
+.about p{
+  margin: 10px 50px;
+  
 }
 
 .works{
@@ -112,6 +115,11 @@ a.header-list {
   padding-top: 75px;
   margin: 100px 50px;
 }
+
+.prof{
+  padding: 50px 100px;
+}
+
 
 .blog{
   height:600px;
@@ -184,7 +192,16 @@ textarea {
 
 .button {
     /* ボタンを他のテキストフィールドと同じ場所に置く */
-    padding: 20px; /* label 要素と同じサイズ */
+     /* label 要素と同じサイズ */
+}
+
+.btn{
+  display: block;
+  border: 1px solid gray;
+  width: 120px;
+  height: 30px;
+  background-color: white;
+  border-radius: 30px;
 }
 
 
@@ -233,6 +250,9 @@ footer .img{
 
 } 
 
+footer p{
+  padding: 10px 30px;
+}
 
 
 /*----------タブレット----------*/
